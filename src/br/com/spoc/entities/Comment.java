@@ -1,3 +1,6 @@
+//Classe responsável por criar comentários;
+
+//Autor:: elizeuebay@gmail.com
 package br.com.spoc.entities;
 
 public class Comment {

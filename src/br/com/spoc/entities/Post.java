@@ -1,3 +1,9 @@
+/*
+ * Essa classe cria um post, e recebe em sua lista de comments vários comentarios
+ * 
+ * Autor::elizeuebay@gmail.com
+ */
+
 package br.com.spoc.entities;
 
 import java.util.ArrayList;
@@ -11,11 +17,14 @@ public class Post {
 	private String content;
 	private Integer likes;
 	
+	//Lista de comentarios;
 	private List<Comment> comments = new ArrayList<>();
 	
+	//Construtor padrão;
 	public Post() {
 	}
 
+	//Construtor com argumentos;
 	public Post(Date moment, String title, String content, Integer likes) {
 		this.moment = moment;
 		this.title = title;
@@ -23,7 +32,7 @@ public class Post {
 		this.likes = likes;
 	}
 	
-
+    //Metodos acessores geters and seters;
 	public Date getMoment() {
 		return moment;
 	}
